@@ -3,7 +3,7 @@ package com.example.helloworld.producerconsumer.Algos;
 import java.util.Arrays;
 
 /**
- * Created by h128850 on 7/6/16.
+ * Created by sarath on 7/6/16.
  */
 public class ArrayReverse {
     static int[] arr;
