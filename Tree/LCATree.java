@@ -15,6 +15,16 @@ public class LCATree {
             return root;
         return left!=null?left:right;
     }
+    Node lcsBST(Node root,int n1,int n2){
+        if(root==null)
+            return null;
+        if(root.data>Math.max(n1,n2))
+            return lcsBST(root.left,n1,n2);
+        else if(root.data<Math.min(n1,n2))
+            return lcsBST(root.right,n1,n2);
+        else
+            return root;
+    }
     public static void main(String[] args) {
         Node root=new Node(1);
         root.left = new Node(2);
